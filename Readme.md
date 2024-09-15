@@ -51,12 +51,6 @@ Once you compile and run the program, you will be presented with a menu:
   - Product Name: A string (up to 50 characters).
   - Order Date: A string (up to 15 characters).
 
-### Data Persistence
-
-- **Customer.csv**: Stores customer records in CSV format with columns `cid,name,phone,mail,location`.
-- **Order.csv**: Stores order records in CSV format with columns `oid,cid,product name,date`.
-- **Order_details.txt**: Contains details of all orders placed by each customer. If a customer has not placed any orders, the report will note that.
-
 ### Output Files
 
 - **Customer.csv**: Generated/updated when customer data is added or modified. It stores customer details such as customer ID, name, phone, email, and address.
@@ -98,7 +92,8 @@ This system includes multiple levels of error handling:
 
 ### Input validation 
 
-- **Invalid Customer and Order Data**: The program checks that all required input fields are provided in the correct format.
+- **Invalid Customer and Order Data**: 
+The program checks that all required input fields are provided in the correct format.
 - **Overflow Prevention**: The system ensures that no more than the maximum allowed number of customers (MAX_CUSTOMERS) or orders (MAX_ORDERS) can be added. If the maximum is reached, a message is displayed, and no more entries are accepted.
 
 ### File Handling
